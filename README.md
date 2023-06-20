@@ -12,6 +12,13 @@ The dataset for 1D Burgers (Burgers_R10.zip) can be downloaded from [dataset lin
 We provide our processed dataset for 2D Navier-Stokes (in .npy format) at [dataset link](https://drive.google.com/drive/folders/1z-0V6NSl2STzrSA6QkzYWOGHSTgiOSYq?usp=sharing) .</br>
 The dataset for these problems are under the courtesy of [FNO](https://github.com/zongyi-li/fourier_neural_operator).
 
+### Pretrained model checkpoint
+
+| Problem       | link   |
+|---------------|---------------------------------------------------------------------------|
+| Navier-Stokes  |  [link](https://drive.google.com/drive/folders/1o_j_4ilbfHHftGmM3_P1UEL_VPPLHTKd?usp=drive_link) |
+| Burgers   |  [link](https://drive.google.com/drive/folders/1e95sE7trXHWQdUAbyTtjqn-l0_Xo6ttR?usp=drive_link) |
+
 ## Usage
 * Train on Navier-Stokes dataset:
 
