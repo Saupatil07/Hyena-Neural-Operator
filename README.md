@@ -24,10 +24,10 @@ The dataset for these problems are under the courtesy of [FNO](https://github.co
 
 ```bash
 python tune_navier_stokes.py \
---lr 5e-4 \
+--lr 1e-4 \
 --ckpt_every 10000 \
---iters 128000 \
---batch_size 16 \
+--iters 96000 \
+--batch_size 4 \
 --in_seq_len 10 \
 --out_seq_len 20 \
 --dataset_path ../pde_data/fno_ns_Re200_N10000_T30.npy \   # path to the dataset
@@ -54,8 +54,8 @@ python tune_navier_stokes.py \
 python train_burgers.py \
 --ckpt_every 1000 \
 --iters 20000 \
---lr 8e-4 \
---batch_size 16 \
+--lr 3e-4 \
+--batch_size 20 \
 --dataset_path ../pde_data/burgers_data_R10.mat \   # path to dataset
 --train_seq_num 1024 \
 --test_seq_num 100 \
