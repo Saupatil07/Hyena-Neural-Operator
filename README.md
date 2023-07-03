@@ -59,4 +59,13 @@ python train_burgers.py \
 --dataset_path ../pde_data/burgers_data_R10.mat \   # path to dataset
 --train_seq_num 1024 \
 --test_seq_num 100 \
---resolution 204
+--resolution 1024
+```
+
+## Acknowledgement
+
+We appreciate the following github repo very much for the valuable code base and datasets:
+
+https://github.com/HazyResearch/safari
+
+https://github.com/neuraloperator/neuraloperator/tree/master
