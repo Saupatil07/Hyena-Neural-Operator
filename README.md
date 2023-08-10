@@ -6,9 +6,9 @@
 <img src="./images/hyena lowpoly(1).jpg" width="500px"></img>
 </p>
 
-## Datasets for 1D Burgers/2D Navier-Stokes
+## Datasets for 1D Diffusion-Reaction/2D Navier-Stokes
 
-The dataset for 1D Burgers (Burgers_R10.zip) can be downloaded from [dataset link](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-) .</br>
+The dataset for 1D Diffusion-Reaction can be downloaded from [dataset link](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-2986) .</br>
 We provide our processed dataset for 2D Navier-Stokes (in .npy format) at [dataset link](https://drive.google.com/drive/folders/1z-0V6NSl2STzrSA6QkzYWOGHSTgiOSYq?usp=sharing) .</br>
 The dataset for these problems are under the courtesy of [FNO](https://github.com/zongyi-li/fourier_neural_operator).
 
@@ -17,7 +17,7 @@ The dataset for these problems are under the courtesy of [FNO](https://github.co
 | Problem       | link   |
 |---------------|---------------------------------------------------------------------------|
 | Navier-Stokes  |  [link](https://drive.google.com/drive/folders/1o_j_4ilbfHHftGmM3_P1UEL_VPPLHTKd?usp=drive_link) |
-| Burgers   |  [link](https://drive.google.com/drive/folders/1e95sE7trXHWQdUAbyTtjqn-l0_Xo6ttR?usp=drive_link) |
+| Burgers   |  [link](https://drive.google.com/drive/folders/1qGc3deWZ1SKbfwsBk5rxZtuTq8_17hzb?usp=sharing) |
 
 ## Usage
 * Train on Navier-Stokes dataset:
@@ -48,18 +48,10 @@ python tune_navier_stokes.py \
 --curriculum_steps 10 \
 --aug_ratio 0.0
 ```
- * Train on 1D Burgers': 
+ * Train on 1D Diffusion-Reaction: 
 
 ```bash
-python train_burgers.py \
---ckpt_every 1000 \
---iters 20000 \
---lr 3e-4 \
---batch_size 20 \
---dataset_path ../pde_data/burgers_data_R10.mat \   # path to dataset
---train_seq_num 1024 \
---test_seq_num 100 \
---resolution 1024
+python hyena_diff_1024.py --iters 90000 --batch_size 20 --ckpt_every 5000 --resolution 1024 --device cuda:1
 ```
 
 ## Acknowledgement
@@ -69,3 +61,5 @@ We appreciate the following github repo very much for the valuable code base and
 https://github.com/HazyResearch/safari
 
 https://github.com/neuraloperator/neuraloperator/tree/master
+
+https://github.com/pdebench/PDEBench
