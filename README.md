@@ -17,7 +17,7 @@ The dataset for these problems are under the courtesy of [FNO](https://github.co
 | Problem       | link   |
 |---------------|---------------------------------------------------------------------------|
 | Navier-Stokes  |  [link](https://drive.google.com/drive/folders/1o_j_4ilbfHHftGmM3_P1UEL_VPPLHTKd?usp=drive_link) |
-| Burgers   |  [link](https://drive.google.com/drive/folders/1qGc3deWZ1SKbfwsBk5rxZtuTq8_17hzb?usp=sharing) |
+| Diffusion-Reaction   |  [link](https://drive.google.com/drive/folders/1qGc3deWZ1SKbfwsBk5rxZtuTq8_17hzb?usp=sharing) |
 
 ## Usage
 * Train on Navier-Stokes dataset:
