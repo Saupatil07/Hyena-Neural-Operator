@@ -10,7 +10,7 @@
 
 The dataset for 1D Diffusion-Reaction can be downloaded from [dataset link](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-2986) .</br>
 We provide our processed dataset for 2D Navier-Stokes (in .npy format) at [dataset link](https://drive.google.com/drive/folders/1z-0V6NSl2STzrSA6QkzYWOGHSTgiOSYq?usp=sharing) .</br>
-The dataset for these problems are under the courtesy of [FNO](https://github.com/zongyi-li/fourier_neural_operator).
+The dataset for these problems are under the courtesy of [FNO](https://github.com/zongyi-li/fourier_neural_operator) and [PDEBench](https://github.com/pdebench/PDEBench).
 
 ### Pretrained model checkpoint
 
